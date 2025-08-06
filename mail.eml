@@ -1,0 +1,458 @@
+Delivered-To: rish3320@gmail.com
+Received: by 2002:a05:7010:33c3:b0:458:f366:1cdf with SMTP id h3csp270097mdd;
+        Sat, 26 Jul 2025 05:54:12 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IF+e4qwQ1ZlM0d3YoOhbrYjiicoE1MAgJDFk+A+N7J6WoWJEOh6n+zQ7bv+Ao8zmdgn8L1L
+X-Received: by 2002:a05:6000:402b:b0:3b6:2f9:42b1 with SMTP id ffacd0b85a97d-3b7765f41dcmr4004907f8f.13.1753534451901;
+        Sat, 26 Jul 2025 05:54:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1753534451; cv=none;
+        d=google.com; s=arc-20240605;
+        b=fV/MYAlTy4/iZxPAQp18CaTEnyaY2dexgeGwPtIXkPOZoK9cDaT/Sw5P2xIdk8+Y5c
+         s69xIT+xt/M7528GB/Kgi9AN7bO9GnAvYel2IRTZCAnTn+pqtkqcaNWKXcfhXPElZsJg
+         z8KC1vN5vgbLmR9BKAKIIpzciPDegyHeAqHWC7Cn+mh3MLdqAWJnmiiJ7oNIQPg+8645
+         HxKcmiGXk3ltwtCY3peMRcz94JDZJj23zkWeOJ6lhw7mZeS7A1QP030Llo7/5/f+/o7D
+         FA7kkxJJILE/nR/nYbQvUMzD9qpozqqUhbb+IGFoF73zDGOqlKslYTolqVvbcIaUOGkM
+         7yiw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=reply-to:message-id:mime-version:list-unsubscribe-post
+         :list-unsubscribe:list-id:from:feedback-id:date:subject:to
+         :dkim-signature:dkim-signature;
+        bh=l2r9OjsO13NghudKElneqY59Ak2y145dELoIhDPU1z4=;
+        fh=z4PwgLMExbnDg/vWbMmunBDcfVUhzKl9yXXWn2TSK0Y=;
+        b=Kf6y8VA2QnQyTb1V7HDzIAqKL4ZRpBXbaJYKBJvbEjDnVjq+Y/tZSp4wLcQswkmSPE
+         DJmC+gVmrbv8fJTE6fckljJ9lQJFrdzOhb39ldj+DlplN2+FsQ6lnc2HSmHjHtaS38M5
+         c1TKYEtE/Qq/LYr4EPqgJZqn18lMMUrum0IYCWmDrAMuIEx7EeU96zVcCq3Tmg2i8MIe
+         BRiBYhXh1PsnIxT40i8CRIYHc2X02d1O8Vn4Ymeuc0HhJe0ApMAWXVJb7WHXciURcRs3
+         9//WYaUtE3d+2i4YFshC7oqtbjnpNyL1XKJ9p7a3+lyGHeC5BQROjVPrgUUMq1qVIoeR
+         EyhA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@nqt-exam.com header.s=brevo2 header.b="Af//kDCe";
+       dkim=pass header.i=@mailin.fr header.s=mail header.b=K+2M2kIw;
+       spf=pass (google.com: domain of bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net designates 77.32.149.27 as permitted sender) smtp.mailfrom="bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nqt-exam.com
+Return-Path: <bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net>
+Received: from shared-p100-i27.d.sp1-brevo.net (shared-p100-i27.d.sp1-brevo.net. [77.32.149.27])
+        by mx.google.com with ESMTPS id 5b1f17b1804b1-4587ac6b573si10904795e9.97.2025.07.26.05.54.11
+        for <rish3320@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 26 Jul 2025 05:54:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net designates 77.32.149.27 as permitted sender) client-ip=77.32.149.27;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nqt-exam.com header.s=brevo2 header.b="Af//kDCe";
+       dkim=pass header.i=@mailin.fr header.s=mail header.b=K+2M2kIw;
+       spf=pass (google.com: domain of bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net designates 77.32.149.27 as permitted sender) smtp.mailfrom="bounces-ggzc5-support=nqt-exam.com@shared-p100-i27.d.sp1-brevo.net";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nqt-exam.com
+DKIM-Signature: a=rsa-sha256; bh=l2r9OjsO13NghudKElneqY59Ak2y145dELoIhDPU1z4=; c=relaxed/relaxed; d=nqt-exam.com; h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id; q=dns/txt; s=brevo2; t=1753534446; v=1; b=Af//kDCeKTAr6AvWaSYYI2a1rMdKSLnMQXDc4jBDfmuMFlDc/xPgFmsmGQ5OaKKBV1vbJ40z fZlwkfLp8mwS+4k1OkiMqTZeKY5BHEvSBFp6zNoz/HyoiEf3JTfjI6Mok3mtg2aORweZuwjAeqe PtxagJpkNPa0POW2xabUVVitbWZ3E+0b611GV4leQS/EOVg9/q98Z7vgATTtEAbHAvgM2ScvaDj ydJyPNx3RYgNdzhPrVsmUjTIC7+lurRdmPunehkt0nGz2tPSETDimzfD83Z41y7D6SuDunveGv1 gIeNZu6Knfof5x/fIocWDfBUTJbDldG8d4WA7ospqnmYw==
+DKIM-Signature: a=rsa-sha256; bh=l2r9OjsO13NghudKElneqY59Ak2y145dELoIhDPU1z4=; c=relaxed/relaxed; d=mailin.fr; h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id; q=dns/txt; s=mail; t=1753534446; v=1; b=K+2M2kIwLEQd7ZKS6AComii3+XxCY/qPeRkqyw1o3ygNiJyjXvVswcPNtfSveh24KNGklvL+ 3rKnUoU+7LSDc9Z2V/89Aeu6uYvxxc5hkpTAipAjTUqRiKB6liQjNe7XZq8dbIgT8guNefxsG+O qafSrk+Y9OWgHn7sgNRcIJX4=
+To: <rish3320@gmail.com>
+Subject: Dear Rishabh, Exciting Opportunity: Showcase Your Skills with NV-NQT's Competitive Exam!
+Content-Type: multipart/alternative; boundary="-------?=_91793-3329740954022"
+Date: Sat, 26 Jul 2025 12:54:06 +0000
+Feedback-ID: 77.32.149.27:9322605_19:9322605:Sendinblue
+From: Radhika Desai <support@nqt-exam.com>
+List-Id: OTMyMjYwNS02NDQ0MC0yMw== <OTMyMjYwNS02NDQ0MC0yMw==.list-id.mailin.fr>
+List-Unsubscribe: <mailto:unsubscribe@shared-p100-i27.d.sp1-brevo.net?subject=unsub-uqatf2v7xcnj&body=uqatf2v7xcnj>,<https://ggzc5.r.sp1-brevo.net/mk/un/li/sh/1t6AVsdYhqSR1filmh5Unb6SZ71w9R/moNtZYZc8Q-Y>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+MIME-Version: 1.0
+Message-Id: <202526071254.uqatf2v7xcnj@shared-p100-i27.d.sp1-brevo.net>
+Reply-To: <support@nqt-exam.com>
+X-Csa-Complaints: csa-complaints@eco.de
+X-Mailer: Sendinblue
+X-Mailin-Campaign: 19
+X-Mailin-Client: 9322605
+X-sib-id: LNueb_rf3LflOyBw9x4hGnJEUzRY8KES0dIDgNMhhLduHMCe4eLcujvvGZltGSv_CWT2T0le2rMsZ9kK9qwHQuLTPrQMlH7cnJ1us82zT02Bgfe9bkr0zw06ijHvHkmRrBU8sJ80KYgupbjjM1sONZnaTPYEgZLx6p3R-yGaOTIyDqOMQuNEYGJad0oGILWcQVZiwi7iit4ZgCWDcLpV1vPEyeos
+
+---------?=_91793-3329740954022
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+**Register for NQT 2025!**
+--------------------------
+
+**Today!**
+----------
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+----------
+
+
+We hope this email finds you well. We are excited to reach out to you with =
+an opportunity to showcase your knowledge and skills through our upcoming c=
+ompetitive exam which is being organised in association with your instituti=
+on.
+
+=C2=A0
+
+=EF=BB=BF
+
+As part of our selection procedure, we would like to request your participa=
+tion in an online assessment test. This test is designed to evaluate your s=
+kills and competencies.
+
+=EF=BB=BF
+
+The online assessment test will be conducted through our secure platform an=
+d will consist of 25 MCQ and 5 Coding Questions. It is important to note th=
+at the test will be timed and should be completed within the specified dura=
+tion of 60 minutes.
+
+
+To access the assessment, please follow the instructions below:
+
+=C2=A0
+
+**Test Platform:** NV-NQT Secure Online AI Proctored Exam
+
+**Test Link:**[ **Click Here to Register**](https://ggzc5.r.sp1-brevo.net/m=
+k/cl/f/sh/1t6Af4OiGsDg0YsVJQTRc5gsrZIcPJ/naF38sxg-dWt)
+
+**Technical Requirements:** Stable internet connection, Google Chrome/ Fire=
+fox recommended browsers
+
+
+We recommend finding a quiet and comfortable environment to complete the te=
+st, ensuring you have a reliable internet connection, and using a device (c=
+omputer, laptop, or tablet) that allows you to comfortably navigate through=
+ the assessment.
+
+=EF=BB=BF
+
+We kindly request that you complete the online assessment at your earliest =
+convenience, keeping in mind any specified deadlines mentioned in previous =
+communication. The results of the test will be an important factor in our f=
+inal decision-making process.
+
+=EF=BB=BF
+
+Please note that your answers will be treated with utmost confidentiality a=
+nd evaluated solely for the purpose of assessing your suitability for the r=
+ole.
+
+=EF=BB=BF
+
+Thank you for your cooperation and dedication to this recruitment drive. We=
+ greatly value your interest in joining India=E2=80=99s Top MNC=E2=80=99s a=
+nd look forward to reviewing your assessment results.
+
+=EF=BB=BF
+
+Best regards,
+
+=C2=A0
+
+Radhika Desai,=C2=A0
+NV-NQT
+
+
+[ Apply Now!](https://ggzc5.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsE8LH4vhmZM=
+mLkiFOHM7N/t9g_FkxBVMrl)
+
+
+---------?=_91793-3329740954022
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head><meta=
+ http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><meta h=
+ttp-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><meta name=3D"format-de=
+tection" content=3D"telephone=3Dno"><meta name=3D"viewport" content=3D"widt=
+h=3Ddevice-width, initial-scale=3D1.0"><title></title><style type=3D"text/c=
+ss" emogrify=3D"no">#outlook a { padding:0; } .ExternalClass { width:100%; =
+} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass fon=
+t, .ExternalClass td, .ExternalClass div { line-height: 100%; } table td { =
+border-collapse: collapse; mso-line-height-rule: exactly; } .editable.image=
+ { font-size: 0 !important; line-height: 0 !important; } .nl2go_preheader {=
+ display: none !important; mso-hide:all !important; mso-line-height-rule: e=
+xactly; visibility: hidden !important; line-height: 0px !important; font-si=
+ze: 0px !important; } body { width:100% !important; -webkit-text-size-adjus=
+t:100%; -ms-text-size-adjust:100%; margin:0; padding:0; } img { outline:non=
+e; text-decoration:none; -ms-interpolation-mode: bicubic; } a img { border:=
+none; } table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-r=
+space:0pt; } th { font-weight: normal; text-align: left; } *[class=3D"gmail=
+-fix"] { display: none !important; } </style><style type=3D"text/css" emogr=
+ify=3D"no"> @media (max-width: 600px) { .gmx-killpill { content: ' \03D1';}=
+ } </style><style type=3D"text/css" emogrify=3D"no">@media (max-width: 600p=
+x) { .gmx-killpill { content: ' \03D1';} .r0-o { border-style: solid !impor=
+tant; margin: 0 auto 0 auto !important; width: 320px !important } .r1-i { b=
+ackground-color: #ffffff !important } .r2-o { border-style: solid !importan=
+t; margin: 0 auto 0 auto !important; width: 100% !important } .r3-c { box-s=
+izing: border-box !important; display: block !important; valign: top !impor=
+tant; width: 100% !important } .r4-o { border-style: solid !important; widt=
+h: 100% !important } .r5-o { border-style: solid !important; margin: 0 auto=
+ 0 0 !important; width: 100% !important } .r6-i { padding-top: 15px !import=
+ant; text-align: left !important } .r7-i { padding-bottom: 15px !important;=
+ padding-top: 15px !important; text-align: left !important } .r8-i { paddin=
+g-bottom: 30px !important; padding-top: 30px !important } .r9-c { box-sizin=
+g: border-box !important; text-align: center !important; valign: top !impor=
+tant; width: 100% !important } .r10-i { padding-bottom: 20px !important; pa=
+dding-left: 15px !important; padding-right: 15px !important; padding-top: 2=
+0px !important } .r11-i { padding-left: 0px !important; padding-right: 0px =
+!important } .r12-c { box-sizing: border-box !important; padding-bottom: 30=
+px !important; padding-top: 30px !important; text-align: center !important;=
+ width: 100% !important } .r13-c { box-sizing: border-box !important; paddi=
+ng-bottom: 15px !important; padding-top: 15px !important; text-align: left =
+!important; valign: top !important; width: 100% !important } .r14-o { borde=
+r-style: solid !important; margin: 0 auto 0 auto !important; margin-bottom:=
+ 15px !important; margin-top: 15px !important; width: 100% !important } .r1=
+5-i { text-align: center !important } .r16-r { background-color: #09bd30 !i=
+mportant; border-radius: 9px !important; border-width: 0px !important; box-=
+sizing: border-box; height: initial !important; padding-bottom: 12px !impor=
+tant; padding-top: 12px !important; text-align: center !important; width: 1=
+00% !important } body { -webkit-text-size-adjust: none } .nl2go-responsive-=
+hide { display: none } .nl2go-body-table { min-width: unset !important } .m=
+obshow { height: auto !important; overflow: visible !important; max-height:=
+ unset !important; visibility: visible !important } .resp-table { display: =
+inline-table !important } .magic-resp { display: table-cell !important } } =
+</style><style type=3D"text/css">p, h1, h2, h3, h4, ol, ul, li { margin: 0;=
+ } .nl2go-default-textstyle { color: #3b3f44; font-family: arial,helvetica,=
+sans-serif; font-size: 16px; line-height: 1.5; word-break: break-word } .de=
+fault-button { color: #ffffff; font-family: arial,helvetica,sans-serif; fon=
+t-size: 16px; font-style: normal; font-weight: normal; line-height: 1.15; t=
+ext-decoration: none; word-break: break-word } a, a:link { color: #0092ff; =
+text-decoration: underline } .default-heading1 { color: #1F2D3D; font-famil=
+y: arial,helvetica,sans-serif; font-size: 36px; font-weight: 400; word-brea=
+k: break-word } .default-heading2 { color: #1F2D3D; font-family: arial,helv=
+etica,sans-serif; font-size: 32px; font-weight: 400; word-break: break-word=
+ } .default-heading3 { color: #1F2D3D; font-family: arial,helvetica,sans-se=
+rif; font-size: 24px; font-weight: 400; word-break: break-word } .default-h=
+eading4 { color: #1F2D3D; font-family: arial,helvetica,sans-serif; font-siz=
+e: 18px; font-weight: 400; word-break: break-word } a[x-apple-data-detector=
+s] { color: inherit !important; text-decoration: inherit !important; font-s=
+ize: inherit !important; font-family: inherit !important; font-weight: inhe=
+rit !important; line-height: inherit !important; } .no-show-for-you { borde=
+r: none; display: none; float: none; font-size: 0; height: 0; line-height: =
+0; max-height: 0; mso-hide: all; overflow: hidden; table-layout: fixed; vis=
+ibility: hidden; width: 0; } </style><!--[if mso]><xml> <o:OfficeDocumentSe=
+ttings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocum=
+entSettings> </xml><![endif]--><style type=3D"text/css">a:link{color: #0092=
+ff; text-decoration: underline;}</style></head><body bgcolor=3D"#ffffff" te=
+xt=3D"#3b3f44" link=3D"#0092ff" yahoo=3D"fix" style=3D"background-color: #f=
+fffff;"> <table cellpadding=3D"0" border=3D"0" cellspacing=3D"0" style=3D" =
+mso-hide: all; display: none;"><tr><td>Dear Rishabh, Exciting Opportunity: =
+Showcase Your Skills with NV-NQT's Competitive Exam!&zwnj; &nbsp; &shy;&zwn=
+j; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zw=
+nj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&z=
+wnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&=
+zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;=
+&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy=
+;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &sh=
+y;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &s=
+hy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &=
+shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; =
+&shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp;=
+ &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp=
+; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbs=
+p; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nb=
+sp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &n=
+bsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &=
+nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; =
+&nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj;=
+ &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj=
+; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwn=
+j; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zw=
+nj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&z=
+wnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&=
+zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;=
+&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy=
+;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &sh=
+y;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &s=
+hy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &=
+shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; =
+&shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp;=
+ &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp=
+; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbs=
+p; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nb=
+sp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &n=
+bsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &=
+nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; =
+&nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj;=
+ &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj=
+; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwn=
+j; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zw=
+nj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&z=
+wnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&=
+zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;=
+&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy=
+;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &sh=
+y;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &s=
+hy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &=
+shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; =
+&shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp;=
+ &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp=
+; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbsp; &shy;&zwnj; &nbs=
+p; &shy;&zwnj; &nbsp; &shy;</td></tr></table> <!--[if mso]> <img width=3D"1=
+" height=3D"1" src=3D"https://ggzc5.r.sp1-brevo.net/mk/op/sh/1t6AVse4sR7ZnC=
+vOJAE5EVOK93s1aT/HbPAlXG093aH" /> <![endif]-->
+=09<!--[if !mso]> <!----> <img style=3D"display:none" src=3D"https://ggzc5.=
+r.sp1-brevo.net/mk/op/sh/1t6AVse4sR7ZnCvOJAE5EVOK93s1aT/HbPAlXG093aH" /> <!=
+-- <![endif]-->  <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ro=
+le=3D"presentation" class=3D"nl2go-body-table" width=3D"100%" style=3D"back=
+ground-color: #ffffff; width: 100%;"><tr><td> <table cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" role=3D"presentation" width=3D"600" align=3D"cen=
+ter" class=3D"r0-o" style=3D"table-layout: fixed; width: 600px;"><tr><td va=
+lign=3D"top" class=3D"r1-i" style=3D"background-color: #ffffff;"> <table ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=
+=3D"100%" align=3D"center" class=3D"r2-o" style=3D"table-layout: fixed; wid=
+th: 100%;"><tr><th width=3D"100%" valign=3D"top" class=3D"r3-c" style=3D"fo=
+nt-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" role=3D"presentation" width=3D"100%" align=3D"left" class=3D"r5-o" style=
+=3D"table-layout: fixed; width: 100%;"><tr><td align=3D"left" valign=3D"top=
+" class=3D"r6-i nl2go-default-textstyle" style=3D"color: #3b3f44; font-fami=
+ly: arial,helvetica,sans-serif; font-size: 16px; line-height: 1.5; word-bre=
+ak: break-word; padding-top: 15px; text-align: left;"> <div><h2 class=3D"de=
+fault-heading2" style=3D"margin: 0; color: #1f2d3d; font-family: arial,helv=
+etica,sans-serif; font-size: 32px; font-weight: 400; word-break: break-word=
+;"><strong>Register for NQT 2025!</strong></h2><h2 class=3D"default-heading=
+2" style=3D"margin: 0; color: #1f2d3d; font-family: arial,helvetica,sans-se=
+rif; font-size: 32px; font-weight: 400; word-break: break-word;"><span styl=
+e=3D"color: #1FBA21; font-family: Arial; font-size: 32px;"><strong>Today!</=
+strong></span></h2></div> </td> </tr></table><table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" align=3D"lef=
+t" class=3D"r5-o" style=3D"table-layout: fixed; width: 100%;"><tr><td align=
+=3D"left" valign=3D"top" class=3D"r7-i nl2go-default-textstyle" style=3D"co=
+lor: #3b3f44; font-family: arial,helvetica,sans-serif; font-size: 16px; lin=
+e-height: 1.5; word-break: break-word; padding-bottom: 15px; padding-top: 1=
+5px; text-align: left;"> <div><p style=3D"margin: 0;">We hope this email fi=
+nds you well. We are excited to reach out to you with an opportunity to sho=
+wcase your knowledge and skills through our upcoming competitive exam which=
+ is being organised in association with your institution.</p><p style=3D"ma=
+rgin: 0;">=C2=A0</p><p style=3D"margin: 0;">=EF=BB=BF</p><p style=3D"margin=
+: 0;">As part of our selection procedure, we would like to request your par=
+ticipation in an online assessment test. This test is designed to evaluate =
+your skills and competencies.</p><p style=3D"margin: 0;">=EF=BB=BF</p><p st=
+yle=3D"margin: 0;">The online assessment test will be conducted through our=
+ secure platform and will consist of 25 MCQ and 5 Coding Questions. It is i=
+mportant to note that the test will be timed and should be completed within=
+ the specified duration of 60 minutes.</p></div> </td> </tr></table><table =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" widt=
+h=3D"600" align=3D"center" class=3D"r2-o" style=3D"table-layout: fixed;"><t=
+r><td class=3D"r8-i" style=3D"padding-bottom: 30px; padding-top: 30px; heig=
+ht: 3px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" role=3D"presentation"><tr><td><table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" role=3D"presentation" class=3D"r8-i" heigh=
+t=3D"3" style=3D"border-top-style: solid; background-clip: border-box; bord=
+er-top-color: #4A4A4A; border-top-width: 3px; font-size: 3px; line-height: =
+3px;"><tr><td height=3D"0" style=3D"font-size: 0px; line-height: 0px;">=C2=
+=AD</td> </tr></table></td> </tr></table></td> </tr></table><table cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100=
+%" align=3D"left" class=3D"r5-o" style=3D"table-layout: fixed; width: 100%;=
+"><tr><td align=3D"left" valign=3D"top" class=3D"r7-i nl2go-default-textsty=
+le" style=3D"color: #3b3f44; font-family: arial,helvetica,sans-serif; font-=
+size: 16px; line-height: 1.5; word-break: break-word; padding-bottom: 15px;=
+ padding-top: 15px; text-align: left;"> <div><p style=3D"margin: 0;">To acc=
+ess the assessment, please follow the instructions below:</p><p style=3D"ma=
+rgin: 0;">=C2=A0</p><p style=3D"margin: 0;"><strong>Test Platform:</strong>=
+ NV-NQT Secure Online AI Proctored Exam</p><p style=3D"margin: 0;"><br><str=
+ong>Test Link:</strong><a href=3D"https://ggzc5.r.sp1-brevo.net/mk/cl/f/sh/=
+1t6Af4OiGsDg0YsVJQTRc5gsrZIcPJ/naF38sxg-dWt" target=3D"_blank" style=3D"col=
+or: #0092ff; text-decoration: underline;" sib_link_id=3D"0" templating=3D"n=
+"> <span style=3D"color: #089A0E;"><strong>Click Here to Register</strong><=
+/span></a></p><p style=3D"margin: 0;"><br><strong>Technical Requirements:</=
+strong> Stable internet connection, Google Chrome/ Firefox recommended brow=
+sers</p></div> </td> </tr></table></th> </tr></table><table cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" alig=
+n=3D"center" class=3D"r2-o" style=3D"table-layout: fixed; width: 100%;"><tr=
+><td class=3D"r10-i" style=3D"padding-bottom: 20px; padding-top: 20px;"> <t=
+able width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation"><tr><th width=3D"100%" valign=3D"top" class=3D"r3-c" styl=
+e=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" role=3D"presentation" width=3D"100%" class=3D"r4-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td valign=3D"top" class=3D"r11-i" style=
+=3D"padding-left: 15px; padding-right: 15px;"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td cl=
+ass=3D"r12-c" align=3D"center" style=3D"padding-bottom: 30px; padding-top: =
+30px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" height=3D"3" style=3D"border-top-style: solid; ba=
+ckground-clip: border-box; border-top-color: #4A4A4A; border-top-width: 3px=
+; font-size: 3px; line-height: 3px;"><tr><td height=3D"0" style=3D"font-siz=
+e: 0px; line-height: 0px;">=C2=AD</td> </tr></table></td> </tr></table></td=
+> </tr></table></th> </tr></table></td> </tr></table><table cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" alig=
+n=3D"center" class=3D"r2-o" style=3D"table-layout: fixed; width: 100%;"><tr=
+><td class=3D"r10-i" style=3D"padding-bottom: 20px; padding-top: 20px;"> <t=
+able width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation"><tr><th width=3D"100%" valign=3D"top" class=3D"r3-c" styl=
+e=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" role=3D"presentation" width=3D"100%" class=3D"r4-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td valign=3D"top" class=3D"r11-i" style=
+=3D"padding-left: 15px; padding-right: 15px;"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td cl=
+ass=3D"r13-c nl2go-default-textstyle" align=3D"left" style=3D"color: #3b3f4=
+4; font-family: arial,helvetica,sans-serif; font-size: 16px; line-height: 1=
+.5; word-break: break-word; padding-bottom: 15px; padding-top: 15px; text-a=
+lign: left; valign: top;"> <div><p style=3D"margin: 0;">We recommend findin=
+g a quiet and comfortable environment to complete the test, ensuring you ha=
+ve a reliable internet connection, and using a device (computer, laptop, or=
+ tablet) that allows you to comfortably navigate through the assessment.</p=
+><p style=3D"margin: 0;">=EF=BB=BF</p><p style=3D"margin: 0;">We kindly req=
+uest that you complete the online assessment at your earliest convenience, =
+keeping in mind any specified deadlines mentioned in previous communication=
+. The results of the test will be an important factor in our final decision=
+-making process.</p><p style=3D"margin: 0;">=EF=BB=BF</p><p style=3D"margin=
+: 0;">Please note that your answers will be treated with utmost confidentia=
+lity and evaluated solely for the purpose of assessing your suitability for=
+ the role.</p><p style=3D"margin: 0;">=EF=BB=BF</p><p style=3D"margin: 0;">=
+Thank you for your cooperation and dedication to this recruitment drive. We=
+ greatly value your interest in joining India=E2=80=99s Top MNC=E2=80=99s a=
+nd look forward to reviewing your assessment results.</p><p style=3D"margin=
+: 0;">=EF=BB=BF</p><p style=3D"margin: 0;">Best regards,</p><p style=3D"mar=
+gin: 0;">=C2=A0</p><p style=3D"margin: 0;">Radhika Desai,=C2=A0<br>NV-NQT</=
+p></div> </td> </tr></table></td> </tr></table></th> </tr></table></td> </t=
+r></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"p=
+resentation" width=3D"100%" align=3D"center" class=3D"r2-o" style=3D"table-=
+layout: fixed; width: 100%;"><tr><td class=3D"r10-i" style=3D"padding-botto=
+m: 20px; padding-top: 20px;"> <table width=3D"100%" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation"><tr><th width=3D"100%" vali=
+gn=3D"top" class=3D"r3-c" style=3D"font-weight: normal;"> <table cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%"=
+ class=3D"r4-o" style=3D"table-layout: fixed; width: 100%;"><tr><td valign=
+=3D"top" class=3D"r11-i" style=3D"padding-left: 15px; padding-right: 15px;"=
+> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ro=
+le=3D"presentation"><tr><td class=3D"r9-c" align=3D"center"> <table cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"17=
+1" class=3D"r14-o" style=3D"table-layout: fixed; width: 171px;"><tr class=
+=3D"nl2go-responsive-hide"><td height=3D"15" style=3D"font-size: 15px; line=
+-height: 15px;">=C2=AD</td> </tr><tr><td height=3D"18" align=3D"center" val=
+ign=3D"top" class=3D"r15-i nl2go-default-textstyle" style=3D"color: #3b3f44=
+; font-family: arial,helvetica,sans-serif; font-size: 16px; line-height: 1.=
+5; word-break: break-word;">  <!--[if mso]> <v:roundrect xmlns:v=3D"urn:sch=
+emas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" h=
+ref=3D"https://ggzc5.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsE8LH4vhmZMmLkiFOH=
+M7N/t9g_FkxBVMrl" style=3D"v-text-anchor:middle; height: 41px; width: 170px=
+;" arcsize=3D"22%" fillcolor=3D"#09bd30" strokecolor=3D"#09bd30" strokeweig=
+ht=3D"1px" data-btn=3D"1" sib_link_id=3D"1" templating=3D"n"> <w:anchorlock=
+> </w:anchorlock> <v:textbox inset=3D"0,0,0,0"> <div style=3D"display:none;=
+"> <center class=3D"default-button"><span>Apply Now!</span></center> </div>=
+ </v:textbox> </v:roundrect> <![endif]-->  <!--[if !mso]><!-- --> <a href=
+=3D"https://ggzc5.r.sp1-brevo.net/mk/cl/f/sh/1t6Af4OiGsE8LH4vhmZMmLkiFOHM7N=
+/t9g_FkxBVMrl" class=3D"r16-r default-button" target=3D"_blank" data-btn=3D=
+"1" style=3D"font-style: normal; font-weight: normal; line-height: 1.15; te=
+xt-decoration: none; word-break: break-word; border-style: solid; word-wrap=
+: break-word; display: block; -webkit-text-size-adjust: none; background-co=
+lor: #09bd30; border-color: #09bd30; border-radius: 9px; border-width: 0px;=
+ color: #ffffff; font-family: arial,helvetica,sans-serif; font-size: 16px; =
+height: 18px; mso-hide: all; padding-bottom: 12px; padding-top: 12px; width=
+: 171px;" sib_link_id=3D"1" templating=3D"n"> <span>Apply Now!</span></a> <=
+!--<![endif]--> </td> </tr><tr class=3D"nl2go-responsive-hide"><td height=
+=3D"15" style=3D"font-size: 15px; line-height: 15px;">=C2=AD</td> </tr></ta=
+ble></td> </tr></table></td> </tr></table></th> </tr></table></td> </tr></t=
+able></td> </tr></table></td> </tr></table> <div align=3D"center" style=3D"=
+color: #727272; font-size: 10px;">If you wish to unsubscribe from our newsl=
+etter, click <a style=3D"color:#01a4c6;" target=3D"_blank" href=3D"https://=
+ggzc5.r.sp1-brevo.net/mk/un/v2/sh/1t6AVsdYhqSR1filmh5Unb6SZ71w9R/moNtZYZc8Q=
+-Y">here</a></div> <div style=3D"font:normal 10px Arial; color:#ccc; text-a=
+lign:center; margin:20px auto 5px; width:200px;">
+=09<div style=3D"margin:10px auto 0px; width:200px;">
+=09=09=09<a href=3D"https://ggzc5.r.sp1-brevo.net/tracking/?utm_campaign=3D=
+4e28d405f5b84309ee46e3ddfb359e6d&amp;utm_medium=3Demail&amp;utm_source=3Dlo=
+go_mailin">
+=09=09=09=09=09<img alt=3D"Mailin" src=3D"https://ggzc5.r.sp1-brevo.net/pub=
+lic/images/logo_nb_en.png" width=3D"129" height=3D"48" />
+=09=09=09</a>
+=09=09</div>
+=09</div> </body></html>
+
+
+---------?=_91793-3329740954022--
