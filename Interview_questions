@@ -1,0 +1,76 @@
+---
+
+1. What is phishing?
+
+Phishing is a cyberattack where attackers impersonate legitimate organizations or individuals to trick people into revealing sensitive information like passwords, 
+credit card numbers, or login credentials—typically via email, text messages, or fake websites.
+
+---
+
+2. How to identify a phishing email?
+
+Phishing emails often have:
+
+- A sense of urgency or threats (e.g., “Your account will be locked”)
+- Spelling/grammar mistakes
+- Suspicious links or attachments
+- Generic greetings (“Dear Customer”)
+- Email addresses that don’t match the real domain
+
+---
+
+3. What is email spoofing?
+
+Email spoofing is when an attacker forges the “From” address in an email header to make it look like it’s coming from a trusted source, even though it’s not. This technique is commonly used in phishing.
+
+---
+
+4. Why are phishing emails dangerous?
+
+Phishing emails can:
+
+- Steal personal or financial information
+- Install malware or ransomware
+- Lead to identity theft
+- Compromise company systems or data
+
+---
+
+5. How can you verify the sender’s authenticity?
+
+- Check the full email address, not just the display name
+- Hover over links before clicking to see the real URL
+- Inspect email headers
+- Contact the sender through official channels (not by replying to the email)
+
+---
+
+6. What tools can analyze email headers?
+
+- MXToolbox Header Analyzer
+- Google Admin Toolbox Message Header
+- Mailheader.org
+  These tools help trace the origin of an email, check SPF, DKIM, and detect spoofing or unusual server hops.
+
+---
+
+7. What actions should be taken on suspected phishing emails?
+
+- `Do not click` on any links or attachments
+- `Report` the email to your IT/security team or email provider
+- `Mark it as spam/phishing` in your email client
+- `Delete` the email after reporting
+- Use endpoint protection tools to scan the system for threats if clicked
+
+---
+
+8. How do attackers use social engineering in phishing?
+
+Attackers manipulate human behavior by:
+
+- Creating fake urgency (“Reset password now!”)
+- Posing as authority figures (boss, bank officer)
+- Exploiting trust and emotions (e.g., fake charity requests or prizes)
+- Using personalized details from social media to craft believable messages
+
+---
